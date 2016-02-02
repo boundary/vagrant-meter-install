@@ -13,6 +13,9 @@ Vagrant.configure(2) do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "puppetlabs/centos-6.6-64-puppet"
+  config.vm.provision :shell do |shell|
+     shell.inline = "sudo API_TOKEN=\"#{ENV['API_TOKEN']}\" /vagrant/install.sh; exit 0"
+  end
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
