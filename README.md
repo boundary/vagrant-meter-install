@@ -16,7 +16,7 @@ Example of a lights out install via bash script of TrueSight Pulse Meter for the
 
 ### Getting Started
 
-The TrueSight Pulse meter is installed on each of the virtual machines via the `install.sh` script. TrueSight Pulse Meter installation requires that the _api token_ be known at install time. The TrueSight Pulse API Token can be found in the _Settings_ -> _Account_ dialog in the TrueSight Pulse web interface.
+The TrueSight Pulse meter is installed on each of the virtual machines via the `install.sh` script. TrueSight Pulse Meter installation requires that the _api token_ be known at install time. The TrueSight Pulse API Token can be found in the _Settings_ -> _Account_ dialog in the TrueSight Pulse web interface. The installation script requires that the API token value is present in an environment variable named, `API_TOKEN`.
 
 ### List of Platforms to Virtual Machine Mapping
 
